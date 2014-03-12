@@ -1,0 +1,58 @@
+#include "A.hpp"
+#include "Value.hpp"
+#include "Node.hpp"
+#include "Reflection.cpp"
+
+namespace cs540{
+
+class CFactory_A : public CFactory {
+
+    public:
+	virtual ObjPtrValue *create() const {
+		cout<<"CFactory - create() "<<endl;
+		//ObjPtrValue_tmpl<A>() *aqua = ObjPtrValue_tmpl<A>(new A);
+		//return aqua;
+        	return new ObjPtrValue_tmpl<A>(new A); //new A();
+    	}
+
+	virtual Value *invoke(const ObjPtrValue *obj, const std::string &method_name, const std::vector<const Value *> &args) const {
+
+
+			 //ObjPtrValue_A *obj = dynamic_cast<ObjPtrValue_A *>(opv);
+			if(method_name == "foo"){
+				IntegerValue *a1 = (IntegerValue *)args.at(0);
+//dynamic_cast<IntegerValue *>args.at(0);
+				StringValue *a2 = (StringValue *)args.at(1);
+//dynamic_cast<StringValue *>args.at(1);
+
+				a1->print();
+				a2->print();
+				cout<<a1->value()<<endl;
+				cout<<a2->value()<<endl;
+
+				A *ap = (A *)obj;
+				int ret = ap->foo(a1->value(), (a2->value()).c_str());
+				cout<<"ret :"<<ret<<endl;
+
+				IntegerValue *valret = new IntegerValue(ret);
+
+				//valret->print();
+				return new IntegerValue(ret);//valret;//->value();
+			}
+		return 0;
+
+	}
+};
+
+
+CFactory_A theFactory;
+
+extern "C" {
+CFactory *factory = &theFactory;
+}
+
+
+
+
+}
+

@@ -1,0 +1,68 @@
+	Force initial allocation on cout: 0x1234
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Base_polymorphic::Base_polymorphic()
+Base_polymorphic::~Base_polymorphic()
+Base1::Base1()
+Base1::Base1()
+Derived::~Derived()
+Base1::~Base1()
+Derived::~Derived()
+Base1::~Base1()
+Basic tests 1 passed.
+Basic tests 2 passed.
+Running threaded test for 15 seconds.
+140520540751632: assignment_new=1698256 ops, assignment=714610 ops, reset=1697772 ops, new_default=1199885 ops, new_copy=496559 ops, delete=1698146 ops
+    rates: assignment_new=113217 ops/sec, assignment=47641 ops/sec, reset=113185 ops/sec, new_default=79992 ops/sec, new_copy=33104 ops/sec, delete=113210 ops/sec
+140520523966224: assignment_new=1689730 ops, assignment=711913 ops, reset=1688136 ops, new_default=1191993 ops, new_copy=494339 ops, delete=1686170 ops
+    rates: assignment_new=112649 ops/sec, assignment=47461 ops/sec, reset=112542 ops/sec, new_default=79466 ops/sec, new_copy=32956 ops/sec, delete=112411 ops/sec
+140520549144336: assignment_new=1713956 ops, assignment=721224 ops, reset=1714986 ops, new_default=1211852 ops, new_copy=501362 ops, delete=1712095 ops
+    rates: assignment_new=114264 ops/sec, assignment=48082 ops/sec, reset=114332 ops/sec, new_default=80790 ops/sec, new_copy=33424 ops/sec, delete=114140 ops/sec
+140520532358928: assignment_new=1722770 ops, assignment=724367 ops, reset=1719810 ops, new_default=1215105 ops, new_copy=503171 ops, delete=1717820 ops
+    rates: assignment_new=114851 ops/sec, assignment=48291 ops/sec, reset=114654 ops/sec, new_default=81007 ops/sec, new_copy=33545 ops/sec, delete=114521 ops/sec

@@ -1,0 +1,15 @@
+Elif Dede
+
+to compile:
+        >make
+
+to run:
+        >./part4
+
+comments:
+	the test code is designed to show the difference in time for cached and non-cached new operations
+	this code is written and tested on remote machines	
+
+for any problems please contact:
+
+elifdd@gmail.com

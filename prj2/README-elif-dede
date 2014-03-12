@@ -1,0 +1,23 @@
+elif dede
+Fall 2010 - CS540 2nd project
+
+
+to compile:
+	> make
+
+to run:
+	first load the classes that you want to use for reflection with the command
+
+	> ./modulegen <class_name>.hpp
+
+	after modulegen is done run the actual program with
+	
+	> ./tinyinterp
+
+
+
+
+
+- I've checked for everything I can think of so if you can still crash this please let me know at:
+
+	elifdd@gmail.com
